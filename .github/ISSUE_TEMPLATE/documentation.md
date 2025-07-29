@@ -1,7 +1,7 @@
 ---
 
 name: Documentation Improvement
-about: Report wrong or missing documentation in template_project
+about: Report wrong or missing documentation in landvaluetax
 title: "DOC:"
 labels: "documentation"
 

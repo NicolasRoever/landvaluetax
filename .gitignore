@@ -15,6 +15,9 @@
 # bld
 bld/
 
+src/landvaluetax/data/
+src/landvaluetax/data/eurostat_hpi/eurostat_hpi
+
 # latex
 *.aux
 *.bbl

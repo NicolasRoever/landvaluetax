@@ -74,7 +74,7 @@ def calculate_rents(people_distribution_matrix, wage):
         raise ValueError("Wage ceiling w is too low to support current occupancy.")
 
     # Choose any U in [lower_bound, upper_bound]
-    U = lower_bound
+    U = (upper_bound + lower_bound) / 2
 
     # --- rents ---------------------------------------------------------------
     R = np.zeros_like(S)
@@ -264,7 +264,7 @@ def init_population_matrix(shape=(10, 10), seed=42):
 
 def plot_pop_matrix(M, title="Population heatmap"):
     plt.imshow(M, cmap="viridis", origin="lower")
-    plt.colorbar(label="Share of mass")
+    plt.colorbar(label="")
     plt.title(title)
     plt.xlabel("Column")
     plt.ylabel("Row")

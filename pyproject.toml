@@ -87,6 +87,7 @@ statsmodels = "*"
 numpy = "*"
 pandas = ">=2.2"
 plotly = ">=5.2.0,<6"
+PyPDF2 = "*"
 
 [tool.pixi.pypi-dependencies]
 landvaluetax = {path = ".", editable = true}
@@ -130,7 +131,7 @@ docs = {features = ["docs"], solve-group = "default"}
 # ======================================================================================
 
 [tool.pytask.ini_options]
-paths = ["./src/landvaluetax", "./documents"]
+paths = ["./src/landvaluetax"]
 pdbcls = "pdbp:Pdb"
 
 # ======================================================================================
